@@ -1,0 +1,78 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons (optionnel) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+<!-- Contenu principal avec Sidebar -->
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block sidebar">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="bi bi-house-door"></i> Tableau de bord
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-card-checklist"></i> Gérer mes annonces
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-graph-up"></i> Suivi des candidatures
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Zone de contenu principale -->
+    <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+      <div class="pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard Entreprise</h1>
+        <p>Gérez vos offres d’emploi, vos annonces, et suivez l’état des candidatures en un seul endroit.</p>
+      </div>
+
+      <!-- Cartes de synthèse -->
+      <div class="row">
+        <!-- Carte Publication d'offres -->
+        <div class="col-md-4 mb-4">
+          <div class="card" style="cursor: pointer;">
+            <div class="card-body text-center">
+              <i class="bi bi-briefcase" style="font-size: 3rem;"></i>
+              <h5 class="card-title mt-3">Publier une offre</h5>
+              <p class="card-text">Créez et publiez de nouvelles offres d’emploi facilement.</p>
+              <a href="#" class="btn btn-primary">Publier</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte Gestion d'annonces -->
+        <div class="col-md-4 mb-4">
+          <div class="card" style="cursor: pointer;" (click)="onViewAnnonce()">
+            <div class="card-body text-center">
+              <i class="bi bi-card-checklist" style="font-size: 3rem;"></i>
+              <h5 class="card-title mt-3">Gérer les annonces</h5>
+              <p class="card-text">Visualisez et modifiez vos annonces en cours.</p>
+              <a (click)="onViewAnnonce()" class="btn btn-primary">Gérer</a>
+            </div>
+          </div>
+        </div>
+        <!-- Carte Suivi des candidatures -->
+        <div class="col-md-4 mb-4">
+          <div class="card" style="cursor: pointer;">
+            <div class="card-body text-center">
+              <i class="bi bi-graph-up" style="font-size: 3rem;"></i>
+              <h5 class="card-title mt-3">Suivi des candidatures</h5>
+              <p class="card-text">Consultez l’état et l’évolution des candidatures reçues.</p>
+              <a href="#" class="btn btn-primary">Suivre</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+

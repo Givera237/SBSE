@@ -1,0 +1,89 @@
+<div class="container-fluid bg-primary my-4">
+     <h1 class="text-center text-white fw-bold p-4"> Développeur Web Angular</h1>
+     <p class="text-end text-white fst-italic">Yaoundé, le 3 avril 2027 </p>
+</div>
+<div class="container my-5">
+    <div class="row">
+        <P>
+            Le processus de séléction est terminé, Consultez les résultats
+        </P>
+        @for (item of [1, 2, 3, 4, 5]; track $index) 
+        { 
+        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded border border-primary mb-3 mx-3" style="max-width: 340px;">
+            <div class="row g-0">
+              <div class="col-md-4 position-relative">
+                <h1 class="text-blue-600/100 position-absolute top-50 start-50 translate-middle dark:text-sky-400/100 text-center py-5"> {{$index +1}} </h1> <br>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">ANGO Farnel Junior Givera</h5>
+                  <p class="card-text"><em class="fw-bold" > Poste :</em> Développeur web</p>
+                  <p class="card-text"><em class="fw-bold" > Expérience :</em> 3 ans</p>
+                  <p class="card-text"><em class="fw-bold" > Diplôme :</em> Master</p>
+                  <p class="card-text"><em class="fw-bold" > Localisation :</em> Ngousso, Yaoundé Cameroun</p>
+                  <p class="card-text"><em class="fw-bold" > Score :</em> 2.000,925</p>
+                  <p class="card-text "><small class="text-blue-600/100" style="cursor: pointer;">Consultez le profil</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Rang</th>
+        <th scope="col">Candidat 1</th>
+        <th scope="col">Candidat 2</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <div class="card shadow p-3 mb-5 bg-body-tertiary rounded border border-primary mb-3 mx-3" style="max-width: 340px;">
+            <div class="row g-0">
+              <div class="col-md-4 position-relative">
+                <h1 class="text-blue-600/100 position-absolute top-50 start-50 translate-middle dark:text-sky-400/100 text-center py-5"> {{ +1}} </h1> <br>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">ANGO Farnel Junior Givera</h5>
+                  <p class="card-text"><em class="fw-bold" > Poste :</em> Développeur web</p>
+                  <p class="card-text"><em class="fw-bold" > Expérience :</em> 3 ans</p>
+                  <p class="card-text"><em class="fw-bold" > Diplôme :</em> Master</p>
+                  <p class="card-text"><em class="fw-bold" > Localisation :</em> Ngousso, Yaoundé Cameroun</p>
+                  <p class="card-text"><em class="fw-bold" > Score :</em> 2.000,925</p>
+                  <p class="card-text "><small class="text-blue-600/100" style="cursor: pointer;">Consultez le profil</small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        </td>
+
+
+
+
+        <td>Otto</td>
+        <td>mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
