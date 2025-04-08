@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { ResultatComponent } from './resultat/resultat.component';
+import { AjoutOffreComponent } from './ajout-offre/ajout-offre.component';
 
 export const routes: Routes = 
 [
@@ -14,4 +15,5 @@ export const routes: Routes =
     {path : 'inscription', component : InscriptionComponent},
     {path : 'annonce', component : AnnonceComponent},
     {path : 'resultat', component : ResultatComponent},
+    {path : 'ajout_offre', component : AjoutOffreComponent}
 ];

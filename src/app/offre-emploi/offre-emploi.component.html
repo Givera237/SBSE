@@ -6,11 +6,64 @@
 
 <div class="container">
   <div class="row">
+    <!--
     <h1 class="h1 fw-bold text-center mt-4">Développeur Web Angular</h1>
       <p>
         E-digital est une startup de la Tech à la recherche d'un développeur web front-end angular. Nous vous offrons 
         l'occasion de faire vos preuves et de gagner énormément.
       </p>
+
+
+
+      <div class="d-flex justify-content-between align-items-start">
+        <div style="flex: 2;">
+            <h4 class="mb-3">Développeur FullStack Senior</h4>
+            <div class="d-flex gap-3 mb-4">
+                <span class="offer-badge bg-primary text-white">
+                    <i class="fas fa-bolt"></i>Active
+                </span>
+                <span class="offer-badge bg-warning text-dark">
+                    <i class="fas fa-clock"></i>3j restants
+                </span>
+                <span class="offer-badge bg-info text-white">
+                    <i class="fas fa-users"></i>45 candidats
+                </span>
+            </div>
+            <div class="timeline-progress mb-3">
+                <div class="timeline-fill" style="--progress: 65%"></div>
+            </div>
+            <div class="d-flex gap-4 text-muted">
+                <div><i class="fas fa-map-marker-alt me-2"></i>Paris (Télétravail possible)</div>
+                <div><i class="fas fa-coins me-2"></i>65K€ - 80K€</div>
+            </div>
+        </div>
+        
+        <div style="flex: 1;">
+            <div class="text-end">
+                <div class="mb-3">
+                    <small class="text-muted">Priorité</small>
+                    <div class="star-rating text-warning">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="analytics-chip">
+                    <small class="text-muted">Performances</small>
+                    <div class="h4 mb-0">92%</div>
+                    <div class="progress" style="height: 4px;">
+                        <div class="progress-bar bg-success" style="width: 92%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
       <h1 class="h1 fw-bold text-center my-5">Suivez ces étapes :</h1>
 
       <div class="col-4">
@@ -58,7 +111,7 @@
 
   </div>
 </div>
-
+-->
 <!-- 1ere étape -->
 
 <ng-template #content let-modal>
@@ -195,7 +248,173 @@
 
 
 
+<div class="row g-4 p-3">
+  <h1 class="h1 fw-bold text-center mt-4">Développeur Web Angular</h1>
+  <p class="text-center" >
+    E-digital est une startup de la Tech à la recherche d'un développeur web front-end angular. Nous vous offrons 
+    l'occasion de faire vos preuves et de gagner énormément.
+  </p>
+        
+  <!-- Panneau latéral intelligent -->
+  <div class="col-lg-3">
+      <div class="smart-filter">
+          <h5 class="mb-4"><i class="fas fa-magic me-2"></i>Filtres Intelligents</h5>
+          <div class="mb-4">
+              <label class="form-label">Statut</label>
+              <div class="d-flex flex-column gap-2">
+                  <button class="btn btn-sm btn-outline-success text-start">
+                    <i class="fas fa-clock me-2"></i>Au Total (45)
+                  </button>
+                  <button class="btn btn-sm btn-outline-primary text-start">
+                      <i class="fas fa-bolt me-2"></i>Actives (28)
+                  </button>
+                  <button class="btn btn-sm btn-outline-danger text-start">
+                      <i class="fas fa-times-circle me-2"></i>En retard (17)
+                  </button>
+              </div>
+          </div>
 
+          <div class="analytics-chip">
+              <div class="d-flex justify-content-between">
+                  <span>Offres totales</span>
+                  <strong>45</strong>
+              </div>
+              <div class="d-flex justify-content-between">
+                  <span>Candidatures moy.</span>
+                  <strong>23</strong>
+              </div>
+              <div class="d-flex justify-content-between">
+                  <span>Taux de conversion</span>
+                  <strong>18%</strong>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Contenu principal amélioré -->
+  <div class="col-lg-9">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+          <div>
+              <h2 class="mb-1"><i class="fas fa-rocket me-2"></i>Gestion des Offres</h2>
+              <p class="text-muted">45 offres actives - 248 candidatures totales</p>
+          </div>
+          <button class="btn btn-primary rounded-pill px-4">
+              <i class="fas fa-plus me-2"></i>Nouvelle Offre
+          </button>
+      </div>
+
+      <!-- Carte d'offre améliorée -->
+      <div class="offer-card p-4 mb-4 position-relative">
+          <div class="quick-action-menu">
+              <div class="btn-group-vertical shadow-sm">
+                  <button class="btn btn-light">
+                      <i class="fas fa-edit text-primary"></i>
+                  </button>
+                  <button class="btn btn-light">
+                      <i class="fas fa-chart-line text-info"></i>
+                  </button>
+                  <button class="btn btn-light">
+                      <i class="fas fa-trash text-danger"></i>
+                  </button>
+              </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-start">
+              <div style="flex: 2;">
+                  <h4 class="mb-3">Développeur FullStack Senior</h4>
+                  <div class="d-flex gap-3 mb-4">
+                      <span class="offer-badge bg-primary text-white">
+                          <i class="fas fa-bolt"></i>Active
+                      </span>
+                      <span class="offer-badge bg-warning text-dark">
+                          <i class="fas fa-clock"></i>3j restants
+                      </span>
+                      <span class="offer-badge bg-info text-white">
+                          <i class="fas fa-users"></i>45 candidats
+                      </span>
+                  </div>
+                  <div class="timeline-progress mb-3">
+                      <div class="timeline-fill" style="--progress: 65%"></div>
+                  </div>
+                  <div class="d-flex gap-4 text-muted">
+                      <div><i class="fas fa-map-marker-alt me-2"></i>Paris (Télétravail possible)</div>
+                      <div><i class="fas fa-coins me-2"></i>65K€ - 80K€</div>
+                  </div>
+              </div>
+              
+              <div style="flex: 1;">
+                  <div class="text-end">
+                      <div class="mb-3">
+                          <small class="text-muted">Priorité</small>
+                          <div class="star-rating text-warning">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="far fa-star"></i>
+                          </div>
+                      </div>
+                      <div class="analytics-chip">
+                          <small class="text-muted">Performances</small>
+                          <div class="h4 mb-0">92%</div>
+                          <div class="progress" style="height: 4px;">
+                              <div class="progress-bar bg-success" style="width: 92%"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Plus d'offres... -->
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+
+    <h1 class="h1 fw-bold text-center my-5">Suivez ces étapes :</h1>
+
+    <div class="col-4">
+      <div class="card shadow p-3 mb-5 bg-body-tertiary rounded border border-primary " style="width: 20rem; cursor: pointer;">
+          <div class="card-body" (click)="open(contents)">
+            <h1 class="text-blue-600/100 dark:text-sky-400/100 text-center">1</h1> <br>
+            <h6 class="card-subtitle mb-2 text-center fw-bold">Donnez des valeurs à vos critères d'évaluation.</h6> <br>
+            <p class="card-text">
+              E-digital est une startup de la Tech à la recherche d'un développeur web front-end angular. Nous vous offrons 
+              l'occasion de faire vos preuves et de gagner énormément.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card shadow p-3 mb-5 bg-body-tertiary rounded border border-primary " style="width: 20rem; cursor: pointer;">
+          <div class="card-body"  (click)="open(content)">
+            <h1 class="text-blue-600/100 dark:text-sky-400/100 text-center">2</h1> <br>
+            <h6 class="card-subtitle mb-2 text-center fw-bold">Classez vos critères d'évaluation par priorité.</h6> <br>
+            <p class="card-text">
+              E-digital est une startup de la Tech à la recherche d'un développeur web front-end angular. Nous vous offrons 
+              l'occasion de faire vos preuves et de gagner énormément.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card shadow p-3 mb-5 bg-body-tertiary rounded border border-primary " style="width: 20rem; cursor: pointer;"> 
+          <div class="card-body" (click)="open(contentes)">
+            <h1 class="text-blue-600/100 dark:text-sky-400/100 text-center">3</h1> <br>
+            <h6 class="card-subtitle mb-2 text-center fw-bold">Uploadez les CV de vos candidats.</h6> <br>
+            <p class="card-text">
+              E-digital est une startup de la Tech à la recherche d'un développeur web front-end angular. Nous vous offrons 
+              l'occasion de faire vos preuves et de gagner énormément.
+            </p>
+          </div>
+      </div>
+    </div>
+    <button class="btn btn-primary rounded-pill px-4 my-5">
+      <i class="fas fa-plus me-2"></i>Consultez les résultats
+  </button>
+  </div>
+</div>
 
 
 

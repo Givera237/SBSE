@@ -2,7 +2,11 @@
 <!-- Bootstrap Icons (optionnel) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">  
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<!--
 
 <div class="bg-gray-800" >
   <div class="container">
@@ -31,7 +35,7 @@
 
 
 
-  <!-- Section Hero -->
+  <!-- Section Hero 
   <header class="bg-gray-300 text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">Bienvenue sur le Système d'eRecruitment Intelligent</h1>
@@ -47,7 +51,7 @@
     </div>
   </header>
 
-  <!-- Section Aperçu -->
+  <!-- Section Aperçu 
   <section class="py-5">
     <div class="container">
       <h2 class="mb-4">À propos du système</h2>
@@ -64,7 +68,7 @@
     </div>
   </section>
 
-  <!-- Section Avantages -->
+  <!-- Section Avantages 
   <section class="bg-light py-5">
     <div class="container">
       <h2 class="mb-4 text-center">Pourquoi choisir notre système ?</h2>
@@ -93,3 +97,145 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: rgba(42,46,77,0.95);">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-brain me-2"></i>eRecruitment
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" style="color: white;" href="#"><i class="fas fa-tachometer-alt me-1"></i>Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bullhorn me-1"></i>Mes annonces</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-chart-bar me-1"></i>Evaluation</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-info-circle me-1"></i>A propos</a></li>
+                <li class="nav-item nav-notification">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge badge bg-danger">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+-->
+<!-- Hero Section -->
+<section class="hero-section text-black bg-gray-800">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold mb-3">Bienvenue sur le Système d'eRecruitment Intelligent</h1>
+                <p class="lead">Optimisez votre processus de recrutement grâce à l'AHP et aux Algorithmes Génétiques.</p>
+            </div>
+        </div>
+
+        <!-- Mode Selection -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="mode-card bg-white text-dark p-4 rounded-4 shadow">
+                    <div class="text-center">
+                        <div class="feature-icon bg-primary text-white mb-4">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>AHP (Analytic Hierarchy Process)</h3>
+                        <p>Sélection multicritère hiérarchisée et pondérée</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mode-card bg-white text-dark p-4 rounded-4 shadow">
+                    <div class="text-center">
+                        <div class="feature-icon bg-success text-white mb-4">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Algorithme Génétique</h3>
+                        <p>Optimisation évolutive des profils candidats</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5 about-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6">
+                <h2 class="mb-4">À propos du système</h2>
+                <div class="card border-0 shadow mb-4">
+                    <div class="card-body">
+                        <h4><i class="fas fa-building me-2 text-primary"></i>Pour les entreprises</h4>
+                        <p class="text-muted">Gérez vos offres d'emploi, automatisez la sélection des meilleurs candidats et éliminez les biais dans le processus de recrutement.</p>
+                    </div>
+                </div>
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <h4><i class="fas fa-users me-2 text-success"></i>Pour les candidats</h4>
+                        <p class="text-muted">Trouvez rapidement des opportunités d'emploi adaptées à vos compétences et bénéficiez d'un processus de candidature transparent et efficace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="col-md-6">
+                <h2 class="mb-4">Pourquoi choisir notre système ?</h2>
+                <div class="d-flex gap-3 mb-4">
+                    <div class="feature-icon bg-warning text-white">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <div>
+                        <h4>Rapidité</h4>
+                        <p class="text-muted">Réduction significative du temps de traitement des candidatures</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 mb-4">
+                    <div class="feature-icon bg-danger text-white">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h4>Précision</h4>
+                        <p class="text-muted">Évaluation objective grâce à l'AHP et aux Algorithmes Génétiques</p>
+                    </div>
+                </div>
+                <div class="d-flex gap-3">
+                    <div class="feature-icon bg-info text-white">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div>
+                        <h4>Transparence</h4>
+                        <p class="text-muted">Suivi complet du processus avec traçabilité assurée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Mode selection
+    document.querySelectorAll('.mode-card').forEach(card => {
+        card.addEventListener('click', function() {
+            const checkbox = this.querySelector('.form-check-input');
+            checkbox.checked = !checkbox.checked;
+            this.classList.toggle('selected', checkbox.checked);
+        });
+    });
+</script>

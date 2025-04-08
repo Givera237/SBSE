@@ -17,4 +17,9 @@ export class DashboardComponent
   {
       this.router.navigateByUrl(`annonce`); 
   }
+
+  ajoutNouvelleOffre() : void
+  {
+      this.router.navigateByUrl(`ajout_offre`); 
+  }
 }
