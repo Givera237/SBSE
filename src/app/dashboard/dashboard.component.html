@@ -1,6 +1,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Bootstrap Icons (optionnel) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <div class="container-fluid pt-5 mt-4">
     <h1 class="text-center fw-bold my-4">Votre Tableau de bord</h1>
@@ -84,31 +86,23 @@
           </div>
       </div>
 
+     
+
       <!-- Section Droite - Statistiques -->
       <div class="col-lg-4">
-          <!-- Statistiques Candidatures -->
-          <div class="glass-panel p-4 h-100">
-              <h4 class="mb-4"><i class="fas fa-chart-pie me-2"></i>Statistiques</h4>
-              <canvas id="statsChart" height="200"></canvas>
-              
-              <div class="mt-4">
-                  <div class="d-flex justify-content-between mb-2">
-                      <span>Candidatures/jour</span>
-                      <strong>45</strong>
-                  </div>
-                  <div class="d-flex justify-content-between mb-2">
-                      <span>Taux de conversion</span>
-                      <strong>18%</strong>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                      <span>Top offre</span>
-                      <strong>Dev FullStack</strong>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+        <!-- Statistiques Candidatures -->
+        <div class="glass-panel p-4 h-100">
+            <h4 class="mb-4"><i class="fas fa-chart-pie me-2"></i>Statistiques</h4>
+            <div class="mt-4">
+                <canvas #statsChart height="200"></canvas>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+      
+  
+
 
 <!-- Modal Nouvelle Offre -->
 <div class="modal fade" id="newOfferModal">
@@ -152,3 +146,5 @@
       </div>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
