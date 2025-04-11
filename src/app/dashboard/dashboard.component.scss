@@ -1,69 +1,79 @@
-.sidebar {
-    height: 100vh;
-    background-color: #f8f9fa;
-  }
-  .sidebar a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    padding: 10px 15px;
-  }
-  .sidebar a:hover {
-    background-color: #e9ecef;
-  }
+// =====================
+// 🎨 Variables
+// =====================
+$primary-color: #2A2E4D;
+$secondary-color: #4ECDC4;
+$accent-color: #FF6B6B;
 
-
-  :root {
-    --primary-color: #2A2E4D;
-    --secondary-color: #4ECDC4;
-    --accent-color: #FF6B6B;
+// =====================
+// 🧩 Mixins
+// =====================
+@mixin glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
+// =====================
+// 💠 Composants principaux
+// =====================
 .glass-panel {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  @include glass-effect;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.state-card {
-    background-color: linear-gradient(45deg, var(--primary-color), #3A3F6D);
-    color: white;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s;
+.stat-card {
+  background: linear-gradient(45deg, $primary-color, #3A3F6D);
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  i {
+    font-size: 2rem;
+    margin-right: 0.75rem;
+  }
 }
 
-.stat-card:hover {
-    transform: translateY(-5px);
-}
-
+// =====================
+// 📊 Progression
+// =====================
 .progress-track {
-    height: 8px;
-    background: rgba(0,0,0,0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-}
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
 
-.progress-fill {
+  .progress-fill {
     height: 100%;
-    background: var(--secondary-color);
-    width: 65%;
-    transition: width 0.5s ease;
+    background: linear-gradient(90deg, $secondary-color, $primary-color);
+    transition: width 1s ease-in-out;
+  }
 }
 
+// =====================
+// 💬 Bulles d'activité
+// =====================
 .activity-bubble {
-    padding: 15px;
-    background: rgba(78, 205, 196, 0.1);
-    border-radius: 15px;
-    position: relative;
-    margin-bottom: 15px;
-}
+  background: #fff;
+  border-left: 5px solid $secondary-color;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
 
-.activity-bubble::after {
+  &::after {
     content: '';
     position: absolute;
     left: 20px;
@@ -72,81 +82,36 @@
     height: 16px;
     background: inherit;
     transform: rotate(45deg);
+  }
 }
 
-  /*
+// =====================
+// 🔘 Boutons personnalisés
+// =====================
+.btn-primary {
+  background-color: $secondary-color;
+  border: none;
 
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
 
-<!-- Contenu principal avec Sidebar -->
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <nav class="col-md-2 d-none d-md-block sidebar">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              <i class="bi bi-house-door"></i> Tableau de bord
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="bi bi-card-checklist"></i> Gérer mes annonces
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="bi bi-graph-up"></i> Suivi des candidatures
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+// Badge personnalisé (danger)
+.badge.bg-danger {
+  background: $accent-color !important;
+}
 
-    <!-- Zone de contenu principale -->
-    <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
-      <div class="pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard Entreprise</h1>
-        <p>Gérez vos offres d’emploi, vos annonces, et suivez l’état des candidatures en un seul endroit.</p>
-      </div>
+// =====================
+// 📱 Responsive
+// =====================
+@media (max-width: 768px) {
+  .glass-panel,
+  .stat-card {
+    padding: 1.25rem;
+  }
 
-      <!-- Cartes de synthèse -->
-      <div class="row">
-        <!-- Carte Publication d'offres -->
-        <div class="col-md-4 mb-4">
-          <div class="card" style="cursor: pointer;">
-            <div class="card-body text-center">
-              <i class="bi bi-briefcase" style="font-size: 3rem;"></i>
-              <h5 class="card-title mt-3">Publier une offre</h5>
-              <p class="card-text">Créez et publiez de nouvelles offres d’emploi facilement.</p>
-              <a href="#" class="btn btn-primary">Publier</a>
-            </div>
-          </div>
-        </div>
-        <!-- Carte Gestion d'annonces -->
-        <div class="col-md-4 mb-4">
-          <div class="card" style="cursor: pointer;" (click)="onViewAnnonce()">
-            <div class="card-body text-center">
-              <i class="bi bi-card-checklist" style="font-size: 3rem;"></i>
-              <h5 class="card-title mt-3">Gérer les annonces</h5>
-              <p class="card-text">Visualisez et modifiez vos annonces en cours.</p>
-              <a (click)="onViewAnnonce()" class="btn btn-primary">Gérer</a>
-            </div>
-          </div>
-        </div>
-        <!-- Carte Suivi des candidatures -->
-        <div class="col-md-4 mb-4">
-          <div class="card" style="cursor: pointer;">
-            <div class="card-body text-center">
-              <i class="bi bi-graph-up" style="font-size: 3rem;"></i>
-              <h5 class="card-title mt-3">Suivi des candidatures</h5>
-              <p class="card-text">Consultez l’état et l’évolution des candidatures reçues.</p>
-              <a href="#" class="btn btn-primary">Suivre</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-</div>
-*/
+  h1, h3, h4 {
+    font-size: 1.3rem;
+  }
+}
