@@ -27,6 +27,7 @@
     "@ng-bootstrap/ng-bootstrap": "^17.0.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.8",
     "express": "^4.18.2",
     "ngx-bootstrap": "^19.0.0",
     "rxjs": "~7.8.0",
